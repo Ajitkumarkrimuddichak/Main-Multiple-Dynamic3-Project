@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Krmaa Lab</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+            <a href="#about"><img class="rounded"
+                    src="data:image/jpeg;base64,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"
+                    alt="logoimage" style="width: 90px;">
+            </a>
+
+            <h1 class="logo me-auto text-white">Karmaa Lab <br><i class="text-info">Connecting people and things</i>
+            </h1>
+            <!-- <h6 class="text-success me-auto">Connecting people and things</h6> -->
+            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+                    <li><a class="nav-link scrollto" href="AboutUs.html">About Us</a></li>
+                    <li><a class="nav-link scrollto" href="Products.html">Products</a></li>
+                    <li><a class="nav-link   scrollto" href="Blogs.html">Blogs</a></li>
+                    <li><a class="nav-link scrollto" href="Contactus.html">Contact Us</a></li>
+                    <li><a href="login.html"><img class="rounded-circle border border-danger border border-5"
+                                src="https://previews.123rf.com/images/creativepriyanka/creativepriyanka1905/creativepriyanka190500160/123561520-employee-icon.jpg"
+                                alt="image" style="width: 35px;"></a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
+
+    <!-- <div class="row">
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+        <div class="col-*-*"></div>
+      </div> -->
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-2 col-sm-2 mt-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="bg-success">
+                                <input type="radio">
+                                <label class="text-white">HOT TOPIC.</label>
+                            </form><br><br>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <form class="bg-danger">
+                                <!-- <input type="radio"> -->
+                                <label class="text-white">5. Minits Ago.</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-2 col-sm-2 mt-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="bg-success">
+                                <input type="radio">
+                                <label class="text-white">HOT TOPIC.</label>
+                            </form><br><br>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                                With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <form class="bg-danger">
+                                <!-- <input type="radio"> -->
+                                <label class="text-white">5. Minits Ago.</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-8 cols-sm-6 card bg-dark text-white">
+                    <img src="https://imageio.forbes.com/specials-images/imageserve/61d66f8dbbb58ffd41f3d174/AI-and-robotics/960x0.jpg?format=jpg&width=960" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text">Last updated 3 mins ago</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+
+
+    <main id="main">  
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://leverageedu.com/blog/wp-content/uploads/2020/04/Types-of-Education.jpg" class="card-img-top" alt="Skyscrapers"/>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 15 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmPVK6ftQX1Kxsgb-G0burXyMcpZR0-2xlTw&usqp=CAU" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 15 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg?w=2000" class="card-img-top" alt="Palm Springs Road"/>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to show
+                    that equal height action.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 15 mins ago</small>
+                </div>
+              </div>
+            </div>
+        </div> 
+
+
+
+         <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eius?</h1><br>
+                    <h4 class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae fuga a
+                        accusantium est
+                        omnis. Perspiciatis, tempora? Odio molestiae facilis, animi minima debitis exercitationem aut
+                        assumenda
+                        eveniet eligendi a nam porro!</h4><br>
+                        <h5 class="text-success">10. minits Ago</h5>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-95660,resizemode-1,msid-91462675/small-biz/sme-sector/need-for-skills-why-indias-education-needs-to-embrace-some-changes.jpg"
+                        class="img-fluid animated" alt="image">
+                </div>
+            </div>
+        </div>
+        </section><!-- End Hero -->
+
+
+        <!-- three cards -->
+        <div class="card-group">
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 15 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 15 mins ago</small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This card has even longer content than the first to show
+                  that equal height action.
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 15 mins ago</small>
+              </div>
+            </div>
+        </div><br>
+        <button class="text-center bg-success w-20 h-20 rounded-3">Lod More</button>
+    </main>
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="mt-5">
+
+        <div class="footer-newsletter bg-primary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h1>Develope with advanced <br>tecnology now</h1>
+                        <form>
+                            <input type="email" name="email" placeholder="your email address..."><input type="submit"
+                                value="Send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top bg-primary">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 footer-contact">
+                        <h3>Karmaa Lab</h3><br>
+                        <h5>Connecting people and things</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident molestiae ipsum
+                            laboriosam, voluptatum adipisci!
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 footer-links">
+                        <h4 class="fs-2">Interested In working with us ?</h4>
+                        <button class="bg-danger w-50 h-25 rounded-3">Get Started </button>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Karma Lab</span></strong>. All Rights
+            </div>
+            <div class="credits">
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
